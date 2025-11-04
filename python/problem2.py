@@ -23,31 +23,7 @@ Parameters:
 
 def grade_evaluator(scores: list[int]) -> str:
     # Implement your code below
-    if not scores:
-        return "No scores provided"
-
-    total = 0
-    count = 0
-    below_75 = 0
-
-    for s in scores:
-        total += s
-        count += 1
-        if s < 75:
-            below_75 += 1
-
-    average = round(total / count, 2)
-
-    if below_75 >= 2:
-        remarks = "Needs Improvement"
-    elif 90 <= average <= 100:
-        remarks = "Excellent"
-    elif 75 <= average < 90:
-        remarks = "Good"
-    else:
-        remarks = "Needs Improvement"
-
-    return f"Average = {average:.2f}, Remarks = {remarks}"
+    return
 
 
 if __name__ == "__main__":

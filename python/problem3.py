@@ -24,42 +24,7 @@ Parameters:
 
 def number_analyzer(numbers: list[int]) -> dict | None:
     # Implement your code below
-    if not numbers:
-        return None
-
-    total = 0
-    count = 0
-    even_count = 0
-    odd_count = 0
-
-    current_max = numbers[0]
-    current_min = numbers[0]
-
-    for n in numbers:
-        total += n
-        count += 1
-
-        if n > current_max:
-            current_max = n
-        if n < current_min:
-            current_min = n
-
-        if n % 2 == 0:
-            even_count += 1
-        else:
-            odd_count += 1
-
-    average = round(total / count, 2)
-
-    return {
-        "total": total,
-        "average": average,
-        "max": current_max,
-        "min": current_min,
-        "even_count": even_count,
-        "odd_count": odd_count,
-    }
-
+    return
 
 if __name__ == "__main__":
     test_cases = [

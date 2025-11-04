@@ -20,16 +20,7 @@ Parameters:
 
 def lucky_guess(guesses: list[int], number: int) -> str:
     # Implement your code below
-    attempts = 0
-    for guess in guesses:
-        if guess < 1 or guess > 10:
-            continue
-        attempts += 1
-        if guess == number:
-            return "You win!"
-        if attempts == 3:
-            break
-    return f"You lose! The number was {number}"
+    return
 
 
 if __name__ == "__main__":
