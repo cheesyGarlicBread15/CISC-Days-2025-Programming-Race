@@ -27,6 +27,7 @@ import java.util.*;
 public class problem2 {
 
     public static String gradeEvaluator(List<Integer> scores) {
+        // Implement your code below
         if (scores.isEmpty())
             return "No scores provided";
 
@@ -58,10 +59,10 @@ public class problem2 {
 
     public static void main(String[] args) {
         Object[][] testCases = {
-            {Arrays.asList(95, 90, 89), "Average = 91.33, Remarks = Excellent", 20},
-            {Arrays.asList(80, 85, 75), "Average = 80.00, Remarks = Good", 20},
-            {Arrays.asList(90, 60, 65), "Average = 71.67, Remarks = Needs Improvement", 20},
-            {Collections.emptyList(), "No scores provided", 15}
+                { Arrays.asList(95, 90, 89), "Average = 91.33, Remarks = Excellent", 20 },
+                { Arrays.asList(80, 85, 75), "Average = 80.00, Remarks = Good", 20 },
+                { Arrays.asList(90, 60, 65), "Average = 71.67, Remarks = Needs Improvement", 20 },
+                { Collections.emptyList(), "No scores provided", 15 }
         };
 
         double totalScore = 0;

@@ -24,11 +24,12 @@ import java.util.*;
 public class problem1 {
 
     public static String luckyGuess(List<Integer> guesses, int number) {
+        // Implement your code below
         int attempts = 0;
 
         for (int guess : guesses) {
             if (guess < 1 || guess > 10) {
-                continue; // skip invalid guesses
+                continue;
             }
             attempts++;
             if (guess == number) {
