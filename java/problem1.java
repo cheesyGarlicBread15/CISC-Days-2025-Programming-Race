@@ -25,22 +25,7 @@ public class problem1 {
 
     public static String luckyGuess(List<Integer> guesses, int number) {
         // Implement your code below
-        int attempts = 0;
-
-        for (int guess : guesses) {
-            if (guess < 1 || guess > 10) {
-                continue;
-            }
-            attempts++;
-            if (guess == number) {
-                return "You win!";
-            }
-            if (attempts == 3) {
-                break;
-            }
-        }
-
-        return "You lose! The number was " + number;
+        return "";
     }
 
     public static void main(String[] args) {

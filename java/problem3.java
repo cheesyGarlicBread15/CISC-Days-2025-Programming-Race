@@ -26,40 +26,7 @@ public class problem3 {
 
     public static Map<String, Object> numberAnalyzer(List<Integer> numbers) {
         // Implement your code below
-        if (numbers.isEmpty())
-            return null;
-
-        int total = 0, count = 0;
-        int evenCount = 0, oddCount = 0;
-        int currentMax = numbers.get(0);
-        int currentMin = numbers.get(0);
-
-        for (int n : numbers) {
-            total += n;
-            count++;
-
-            if (n > currentMax)
-                currentMax = n;
-            if (n < currentMin)
-                currentMin = n;
-
-            if (n % 2 == 0)
-                evenCount++;
-            else
-                oddCount++;
-        }
-
-        double average = Math.round((total / (double) count) * 100.0) / 100.0;
-
-        Map<String, Object> result = new LinkedHashMap<>();
-        result.put("total", total);
-        result.put("average", average);
-        result.put("max", currentMax);
-        result.put("min", currentMin);
-        result.put("even_count", evenCount);
-        result.put("odd_count", oddCount);
-
-        return result;
+        return null;
     }
 
     public static void main(String[] args) {

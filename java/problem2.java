@@ -28,33 +28,7 @@ public class problem2 {
 
     public static String gradeEvaluator(List<Integer> scores) {
         // Implement your code below
-        if (scores.isEmpty())
-            return "No scores provided";
-
-        double total = 0;
-        int count = 0;
-        int below75 = 0;
-
-        for (int s : scores) {
-            total += s;
-            count++;
-            if (s < 75)
-                below75++;
-        }
-
-        double average = Math.round((total / count) * 100.0) / 100.0;
-        String remarks;
-
-        if (below75 >= 2)
-            remarks = "Needs Improvement";
-        else if (average >= 90 && average <= 100)
-            remarks = "Excellent";
-        else if (average >= 75)
-            remarks = "Good";
-        else
-            remarks = "Needs Improvement";
-
-        return String.format("Average = %.2f, Remarks = %s", average, remarks);
+        return "";
     }
 
     public static void main(String[] args) {
