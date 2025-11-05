@@ -44,11 +44,11 @@ if __name__ == "__main__":
         try:
             result = grade_evaluator(scores)
             if result == expected:
-                print(f"✅ Test {i} Passed (+{points} pts)")
+                print(f"Test {i} Passed (+{points} pts)")
                 total_score += points
             else:
-                print(f"❌ Failed (Expected: {expected}, Got: {result})")
+                print(f"Failed (Expected: {expected}, Got: {result})")
         except Exception as e:
-            print(f"❌ Error occurred: {type(e).__name__} ({e})")
+            print(f"Error occurred: {type(e).__name__} ({e})")
 
     print(f"\nTotal Score: {total_score}/{max_score}")

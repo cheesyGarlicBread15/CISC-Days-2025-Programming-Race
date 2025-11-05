@@ -40,9 +40,9 @@ if __name__ == "__main__":
     for i, (guesses, number, expected, points) in enumerate(test_cases, 1):
         result = lucky_guess(guesses, number)
         if result == expected:
-            print(f"✅ Test {i} Passed (+{points} pts)")
+            print(f"Test {i} Passed (+{points} pts)")
             total_score += points
         else:
-            print(f"❌ Test {i} Failed (Expected: {expected}, Got: {result})")
+            print(f"Test {i} Failed (Expected: {expected}, Got: {result})")
 
     print(f"\nTotal Score: {total_score}/{max_score}")
